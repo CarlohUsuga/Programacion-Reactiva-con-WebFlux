@@ -1,0 +1,37 @@
+# Maven
+restaurant-catalog-api/target/
+restaurant-catalog-api/.mvn/repository/
+*.class
+*.jar
+*.war
+*.ear
+
+# Node / Frontend
+restaurant-frontend/node_modules/
+restaurant-frontend/dist/
+restaurant-frontend/.env
+restaurant-frontend/.env.local
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Spring Boot
+*.log
+spring.log
+
+# Secrets / env
+.env
+*.env
+application-local.yml
+application-secret.yml

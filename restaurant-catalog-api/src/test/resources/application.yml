@@ -1,0 +1,13 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/restaurant_db_test
+    username: postgres
+    password: postgres
+
+  mail:
+    host: localhost
+    port: 3025
+
+jwt:
+  secret: "404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970"
+  expiration: 3600000

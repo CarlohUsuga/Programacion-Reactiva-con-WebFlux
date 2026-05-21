@@ -1,0 +1,44 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: restaurant-catalog-api
+
+  # R2DBC (reactive database)
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/restaurant_db
+    username: postgres
+    password: Carlos_123
+    pool:
+      initial-size: 5
+      max-size: 20
+      max-idle-time: 30m
+
+# Gmail SMTP
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: carlosusuga643@gmail.com
+    password: "zwow eppu zjdo tbnk"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+# JWT
+jwt:
+  secret: "404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970"
+  expiration: 86400000  # 24 hours in milliseconds
+
+# CORS
+cors:
+  allowed-origins: "http://localhost:5173,http://localhost:3000"
+
+# Logging
+logging:
+  level:
+    com.restaurant.catalogapi: DEBUG
+    org.springframework.r2dbc: DEBUG
